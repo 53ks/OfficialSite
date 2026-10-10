@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>53ks Official - Portfolio & Hub</title>
+  <meta name="description" content="53ksの公式ポートフォリオ・ポータルサイトです。ボットやアプリの開発、各種SNS活動情報をまとめています。">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body class="bg-white text-slate-900 flex flex-col min-h-screen">
+
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="/" class="text-xl font-extrabold tracking-tight flex items-center gap-2">
+        <span class="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center text-sm">53</span>
+        <span>53ks.dev</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+        <a href="#about" class="hover:text-slate-900 transition-colors">About</a>
+        <a href="#projects" class="hover:text-slate-900 transition-colors">Projects</a>
+        <a href="#community" class="hover:text-slate-900 transition-colors">Community</a>
+        <a href="/blik/" class="hover:text-slate-900 transition-colors">Blik</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <section class="max-w-6xl mx-auto px-6 pt-24 pb-20 text-center reveal">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold mb-8">
+        <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+        Developer / Creator Hub
+      </div>
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-8">
+        Making ideas real<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-slate-700 to-blue-600">
+          with Code & Vision
+        </span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto mb-12 leading-relaxed">
+        GitHub、Discord、Xなどで活動中。ボット開発・Webアプリケーション制作・コミュニティ運営を行っています。
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="#projects" class="btn-pro">
+          <span>プロジェクトを見る</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="https://github.com/53ks" target="_blank" rel="noopener" class="btn-outline">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-100 reveal">
+      <div class="grid md:grid-cols-[1fr_1.618fr] gap-12 items-start">
+        <div>
+          <h2 class="text-3xl font-extrabold tracking-tight mb-4">About Me</h2>
+          <p class="text-slate-500 leading-relaxed mb-6">
+            多様なプラットフォームでBot制作やアプリ開発に取り組む個人デベロッパー。
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="p-6 rounded-2xl bg-slate-50 card-hover">
+            <i data-lucide="bot" class="w-8 h-8 text-blue-600 mb-4"></i>
+            <h3 class="font-bold text-lg mb-2">Bot Development</h3>
+            <p class="text-slate-500 text-sm">Discord向け利便性向上ボットや自動化スキームの構築。</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-slate-50 card-hover">
+            <i data-lucide="layout" class="w-8 h-8 text-blue-600 mb-4"></i>
+            <h3 class="font-bold text-lg mb-2">Web Services</h3>
+            <p class="text-slate-500 text-sm">モダンなフロントエンド環境を活用したWebツール開発。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-100 reveal">
+      <h2 class="text-3xl font-extrabold tracking-tight mb-12 text-center">Projects & Products</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-3xl bg-white card-hover flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600">App</span>
+            <h3 class="text-xl font-bold mt-2 mb-3">Blik</h3>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">現在準備中の新プロジェクト。</p>
+          </div>
+          <a href="/blik/" class="text-sm font-bold text-slate-900 inline-flex items-center gap-1 hover:gap-2 transition-all">
+            <span>ステータスを見る</span>
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-50 border-t border-slate-100 py-12 mt-20">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <p class="text-sm text-slate-500">© 53ks. All rights reserved.</p>
+      <div class="flex items-center gap-6 text-sm text-slate-500">
+        <a href="/terms/" class="hover:text-slate-900">利用規約</a>
+        <a href="/privacy/" class="hover:text-slate-900">プライバシーポリシー</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/common.js"></script>
+</body>
+</html>

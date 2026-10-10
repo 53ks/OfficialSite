@@ -1,0 +1,25 @@
+:root {
+  --color-bg: #ffffff;
+  --color-bg-subtle: #f8fafc;
+  --color-surface: #f1f5f9;
+  --color-text-main: #0f172a;
+  --color-text-muted: #64748b;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-border: #e2e8f0;
+
+  --phi: 1.618;
+  --space-unit: 1rem;
+  --space-phi-sm: calc(var(--space-unit) / var(--phi));
+  --space-phi-md: var(--space-unit);
+  --space-phi-lg: calc(var(--space-unit) * var(--phi));
+  --space-phi-xl: calc(var(--space-unit) * var(--phi) * var(--phi));
+  --space-phi-2xl: calc(var(--space-unit) * var(--phi) * var(--phi) * var(--phi));
+
+  --font-phi-xs: calc(1rem / var(--phi) / var(--phi));
+  --font-phi-sm: calc(1rem / var(--phi));
+  --font-phi-base: 1rem;
+  --font-phi-lg: calc(1rem * var(--phi));
+  --font-phi-xl: calc(1rem * var(--phi) * var(--phi));
+  --font-phi-2xl: calc(1rem * var(--phi) * var(--phi) * var(--phi));
+}

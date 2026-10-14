@@ -1,0 +1,35 @@
+name: Update Discord Invite OGP
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install Canvas Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential libcairo2-dev pango1.0-tools libjpeg-dev libgif-dev librsvg2-dev
+          npm install canvas
+
+      - name: Generate OGP Image
+        run: node assets/js/generate-ogp.js
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/images/discord-banner.png
+          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: update discord invite ogp" && git push)

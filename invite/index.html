@@ -3,35 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Berry’s Creator Community Club - Discord</title>
-  <meta name="description" content="Berry公式Discordサーバーの招待ページです。開発コミュニティへの参加はこちらから。">
+  <title>Berry’s Creator Community Club</title>
 
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Berry’s Creator Community Club に参加しよう">
+  <meta property="og:description" content="Berry公式Discordサーバーへの招待リンクです。">
   <meta property="og:url" content="https://rry-be.f5.si/invite/">
-  <meta property="og:title" content="Berry’s Creator Community Club">
-  <meta property="og:description" content="Discordコミュニティに参加しよう！">
-  <meta property="og:image" content="https://rry-be.f5.si/assets/images/discord-banner.png">
-
+  <meta property="og:image" content="https://rry-be.f5.si/assets/images/invite-base.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Berry’s Creator Community Club">
-  <meta name="twitter:description" content="Discordコミュニティに参加しよう！">
-  <meta name="twitter:image" content="https://rry-be.f5.si/assets/images/discord-banner.png">
 
   <script>
-    (function() {
-      var inviteCode = "6gThgxtGxt";
-      var appUrl = "discord://discord.gg/" + inviteCode;
-      var webUrl = "https://discord.gg/" + inviteCode;
-
-      window.location.href = appUrl;
-
-      setTimeout(function() {
-        window.location.href = webUrl;
-      }, 500);
-    })();
+    const inviteCode = "6gThgxtGxt";
+    window.location.href = "discord://discord.gg/" + inviteCode;
+    setTimeout(() => {
+      window.location.href = "https://discord.gg/" + inviteCode;
+    }, 1000);
   </script>
 </head>
-<body style="background:#0f172a; color:#ffffff; font-family:sans-serif; display:flex; align-items:center; justify-content:center; height:100vh; margin:0;">
-  <p>Discordへ移動中...</p>
+<body style="background:#0f172a; color:#ffffff; font-family:sans-serif; display:flex; align-items:center; justify-center; height:100vh; margin:0; text-align:center;">
+  <div>
+    <h2>Discordにリダイレクト中...</h2>
+    <p><a href="https://discord.gg/6gThgxtGxt" style="color:#3b82f6;">自動で移動しない場合はこちらをクリック</a></p>
+  </div>
 </body>
 </html>
